@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<link href="css/head_foot.css" rel="stylesheet">
+
+ <script src="js/bootstrap.min.js" type="text/javascript"></script>
+<script src="js/header.js" type="text/javascript"></script> 
+  <script src="js/jquery.min.js" type="text/javascript"></script>
+  <!-- link href="https://fonts.googleapis.com/css?family=Calligraffitti" rel="stylesheet"> -->
+  <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+
+<title>
+  Vivarjitha:Fashion Destination
+</title>
+</head>
+<body>
+  <div class="header-top-w3layouts">
+
+
+    <a href="index.html"><img src="images/logo.png" width="300px" height=100px></a>
+    <div style="float:right;padding:40px 50px 20px 50px">
+      <i>A name you can trust...</i>
+    </div>
+
+  </div>
+  <div class="topnav" id="myTopnav">
+    <a href="index.htm">Home</a>
+
+
+    <div class="dropdown_my">
+      <button class="dropbtn_my">Categories <i class="fa fa-caret-down"></i>
+
+      </button>
+      <div class="dropdown-content_my">
+      <div class="dropdown_my_sub">
+         <a href="#"><button class="dropbtn_my_sub">Jewellery <i class="fa fa-caret-right"></i></button></a>
+         		<div class="dropdown-content_my_sub" style="top:0px">
+                            <a href="#">Link 2</a>
+                            <a href="#">Link 3</a>
+                        </div>
+      </div>
+        <div class="dropdown_my_sub">
+         <a href="#"><button class="dropbtn_my_sub">Bags <i class="fa fa-caret-right"></i></button></a>
+         		<div class="dropdown-content_my_sub" style="top:49px">
+                            <a href="#">Link 2</a>
+                            <a href="#">Link 3</a>
+                        </div>
+      </div>
+       <div class="dropdown_my_sub">
+         <a href="#"><button class="dropbtn_my_sub">Clothing <i class="fa fa-caret-right"></i></button></a>
+         		<div class="dropdown-content_my_sub" style="top:98px">
+                            <a href="#">Link 2</a>
+                            <a href="#">Link 3</a>
+                        </div>
+      </div>
+      </div>
+    </div>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+    <div class="search-container">
+      <form action="/action_page.php">
+        <input type="text" placeholder="Search.." name="search" size=70>
+        <button type="submit"><i class="fa fa-search" style="color:black"></i></button>
+      </form>
+    </div>
+
+      <div class="dropdown_my_not">
+         <button class="dropbtn_my_not" onclick="drop('m4')"><i class="fa fa-user-circle-o" style="font-size:20px;color:black"></i></button>    
+         		<div id="m4" class="dropdown-content_my_not" style="right:0px">
+                            <a href="#">Manage Account</a>
+                            <a href="#">Order History</a>
+                            <a href="#">Manage Wallets</a>
+                        </div>
+      </div>
+  
+      <div class="dropdown_my_not">
+         <button class="dropbtn_my_not" onclick="drop('m3')"><i class="fa fa-shopping-cart" style="font-size:20px;color:black"></i></button>
+         		<div id="m3" class="dropdown-content_my_not" style="right:0px">
+                           <a href="#"><img src="images/cap1.jpg" width=30px height=30px align=left> Product1</a>
+                            <a href="#"><img src="images/cp6.jpg" width=30px height=30px align=left> Product2</a>
+                            <a href="#"><img src="images/cp7.jpg" width=30px height=30px align=left> Product3</a>
+                            <a href="#"><div style="font-size:12px;color:blue">Checkout</div></a>
+                        </div>
+      </div>
+      <div class="dropdown_my_not">
+         <button class="dropbtn_my_not" onclick="drop('m2')"><i class="fa fa-heart" style="font-size:20px;color:black"></i></button>
+         		<div id="m2" class="dropdown-content_my_not" style="right:40px">
+                            <a href="#"><img src="images/cap1.jpg" width=30px height=30px align=left> Product1</a>
+                            <a href="#"><img src="images/cp6.jpg" width=30px height=30px align=left> Product2</a>
+                            <a href="#"><img src="images/cp7.jpg" width=30px height=30px align=left> Product3</a>
+                            <a href="#"><div style="font-size:12px;color:blue">Manage Whishlist</div></a>         
+</div>
+      </div>
+      <div class="dropdown_my_not">
+         <button class="dropbtn_my_not" onclick="drop('m1')"><i class="fa fa-bell" style="font-size:20px;color:black"></i></button>
+         		<div id="m1" class="dropdown-content_my_not" style="right:100px">
+                                  <a href="#">Notification 1</a>
+                                  <a href="#">Notification 2</a>
+                                  <a href="#">Notification 3</a> 
+                        </div>
+      </div>
+  
+    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction1()">&#9776;</a>
+
+  </div>
+
+<!--------------------------------------------------------------------------------------------->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!------------------------------------------------------------------------------------------>
+
+
+<script>
+function myFunction1() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+
+
+</script>
+
+</body>
+</html>

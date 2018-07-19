@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width", initial-scale=1>
+
+
+<link href="css/head_foot.css" rel="stylesheet"> 
+<link href="css/index.css" rel="stylesheet">
+<script src="js/header.js" type="text/javascript"></script> 
+<link href="css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+<script src="js/bootstrap.min.js" type="text/javascript"></script>
+  <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+<title>
+  Vivarjitha:Fashion Destination
+</title>
+<style>
+.carousel-inner{width:100%;}
+.carousel-inner .item.left.active {
+  transform: translateX(-33%);
+}
+.carousel-inner .item.right.active {
+  transform: translateX(33%);
+}
+
+.carousel-inner .item.next {
+  transform: translateX(33%)
+}
+.carousel-inner .item.prev {
+  transform: translateX(-33%)
+}
+
+.carousel-inner .item.right,
+.carousel-inner .item.left { 
+  transform: translateX(0);
+}
+
+
+.carousel-control.left,.carousel-control.right { width:0%;background-image:none;}
+
+</style>
+</head>
+<body>
+  <div class="header-top-w3layouts">
+
+
+    <a href="index.html"><img src="images/logo.png" width="300px" height=100px></a>
+    <div style="float:right;padding:40px 50px 20px 50px">
+      <i>A name you can trust...</i>
+    </div>
+
+  </div>
+  <div class="topnav" id="myTopnav">
+    <a href="index.htm">Home</a>
+
+
+    <div class="dropdown_my">
+      <button class="dropbtn_my">Categories <i class="fa fa-caret-down"></i>
+
+      </button>
+      <div class="dropdown-content_my">
+      <div class="dropdown_my_sub">
+         <a href="#"><button class="dropbtn_my_sub">Jewellery <i class="fa fa-caret-right"></i></button></a>
+         		<div class="dropdown-content_my_sub" style="top:0px">
+                            <a href="#">Link 2</a>
+                            <a href="#">Link 3</a>
+                        </div>
+      </div>
+        <div class="dropdown_my_sub">
+         <a href="#"><button class="dropbtn_my_sub">Bags <i class="fa fa-caret-right"></i></button></a>
+         		<div class="dropdown-content_my_sub" style="top:49px">
+                            <a href="#">Link 2</a>
+                            <a href="#">Link 3</a>
+                        </div>
+      </div>
+       <div class="dropdown_my_sub">
+         <a href="#"><button class="dropbtn_my_sub">Clothing <i class="fa fa-caret-right"></i></button></a>
+         		<div class="dropdown-content_my_sub" style="top:98px">
+                            <a href="#">Link 2</a>
+                            <a href="#">Link 3</a>
+                        </div>
+      </div>
+      </div>
+    </div>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+    <div class="search-container">
+      <form action="/action_page.php">
+        <input type="text" placeholder="Search.." name="search" size=70>
+        <button type="submit"><i class="fa fa-search" style="color:black"></i></button>
+      </form>
+    </div>
+
+      <div class="dropdown_my_not">
+         <button class="dropbtn_my_not" onclick="drop('m4')"><i class="fa fa-user-circle-o" style="font-size:20px;color:black"></i></button>    
+         		<div id="m4" class="dropdown-content_my_not" style="right:0px">
+                            <a href="#">Manage Account</a>
+                            <a href="#">Order History</a>
+                            <a href="#">Manage Wallets</a>
+                        </div>
+      </div>
+  
+      <div class="dropdown_my_not">
+         <button class="dropbtn_my_not" onclick="drop('m3')"><i class="fa fa-shopping-cart" style="font-size:20px;color:black"></i></button>
+         		<div id="m3" class="dropdown-content_my_not" style="right:0px">
+                           <a href="#"><img src="images/cap1.jpg" width=30px height=30px align=left> Product1</a>
+                            <a href="#"><img src="images/cp6.jpg" width=30px height=30px align=left> Product2</a>
+                            <a href="#"><img src="images/cp7.jpg" width=30px height=30px align=left> Product3</a>
+                            <a href="#"><div style="font-size:12px;color:blue">Checkout</div></a>
+                        </div>
+      </div>
+      <div class="dropdown_my_not">
+         <button class="dropbtn_my_not" onclick="drop('m2')"><i class="fa fa-heart" style="font-size:20px;color:black"></i></button>
+         		<div id="m2" class="dropdown-content_my_not" style="right:40px">
+                            <a href="#"><img src="images/cap1.jpg" width=30px height=30px align=left> Product1</a>
+                            <a href="#"><img src="images/cp6.jpg" width=30px height=30px align=left> Product2</a>
+                            <a href="#"><img src="images/cp7.jpg" width=30px height=30px align=left> Product3</a>
+                            <a href="#"><div style="font-size:12px;color:blue">Manage Whishlist</div></a>         
+</div>
+      </div>
+      <div class="dropdown_my_not">
+         <button class="dropbtn_my_not" onclick="drop('m1')"><i class="fa fa-bell" style="font-size:20px;color:black"></i></button>
+         		<div id="m1" class="dropdown-content_my_not" style="right:100px">
+                                  <a href="#">Notification 1</a>
+                                  <a href="#">Notification 2</a>
+                                  <a href="#">Notification 3</a> 
+                        </div>
+      </div>
+  
+    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction1()">&#9776;</a>
+
+  </div>
+
+  <div class="slideshow-container_my">
+
+    <div class="mySlides fade_my">
+      <div class="numbertext_slide">1 / 4</div>
+      <img src="images/banner2.jpg" style="width:100%;height:500px">
+      <div class="text_slide">Caption Text</div>
+    </div>
+
+    <div class="mySlides fade_my">
+      <div class="numbertext_slide">2 / 4</div>
+      <img src="images/bb1.jpg" style="width:100%;height:500px">
+      <div class="text_slide">Caption Two</div>
+    </div>
+
+    <div class="mySlides fade_my">
+      <div class="numbertext_slide">3 / 4</div>
+      <img src="images/bb2.jpg" style="width:100%;height:500px">
+      <div class="text_slide">Caption Three</div>
+    </div>
+    <div class="mySlides fade_my">
+      <div class="numbertext_slide">4 / 4</div>
+      <img src="images/bb3.jpg" style="width:100%;height:500px">
+      <div class="text_slide">Caption Three</div>
+    </div>
+  </div>
+  <br>
+
+  <div style="text-align:center">
+    <span class="dot_my"></span>
+    <span class="dot_my"></span>
+    <span class="dot_my"></span>
+    <span class="dot_my"></span>
+  </div>
+  <br>
+  <br><br>
+  <!-- ----------------------------------------------------------- -->
+  <div style="padding:20px 220px">
+    <h1>Collections:</h1>
+  </div>
+  <div class="row_coll">
+    <div class="column_coll">
+      <div class="image_coll">
+        <img src="images/rocks.jpg" style="width:100%">
+        <div class="centered_text_coll" style="opacity:1"><font face="Edwardian Script ITC">"The Winter Collection"</font></div>
+      </div>
+    </div>
+    <div class="column_coll">
+      <div  class="image_coll">
+        <img src="images/underwater.jpg" style="width:100%;height:40%">
+        <div class="centered_text_coll" style="opacity:1"><font face="Edwardian Script ITC">"The Summer Collection"</font></div>
+      </div>
+      <div  class="image_coll">
+        <img src="images/ocean.jpg" style="width:100%;height:50%">
+        <div class="centered_text_coll" style="opacity:1"><font face="Edwardian Script ITC">"The Autumn Collection"</font></div>
+      </div>
+    </div>
+    <div class="column_coll">
+      <div  class="image_coll">
+        <img src="images/wedding.jpg" style="width:100%;height:30%">
+        <div class="centered_text_coll" style="opacity:1"><font face="Edwardian Script ITC">"The Spring Collection"</font></div>
+      </div>
+      <div class="image_coll">
+        <img src="images/rocks.jpg" style="width:100%;height:40%">
+        <div class="centered_text_coll" style="opacity:1"><font face="Edwardian Script ITC">"The All weather Collection"</font></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ----------------------------------------------------------- -->
+  <div style="padding:20px 220px">
+    <h1>Featured Products:</h1>
+  </div>
+<div class="clearfix"></div>
+<div class="col-md-8 col-md-offset-2">
+<div class="carousel slide"  id="myCarousel">
+  <div class="carousel-inner">
+    <div class="item active">
+      <div class="col-md-4"><a href="#"><img src="http://placehold.it/500/bbbbbb/fff&amp;text=1" class="img-responsive"></a></div>
+    </div>
+    <div class="item">
+      <div class="col-md-4"><a href="#"><img src="http://placehold.it/500/CCCCCC/fff&amp;text=2" class="img-responsive"></a></div>
+    </div>
+    <div class="item">
+      <div class="col-md-4"><a href="#"><img src="http://placehold.it/500/eeeeee/fff&amp;text=3" class="img-responsive"></a></div>
+    </div>
+    <div class="item">
+      <div class="col-md-4"><a href="#"><img src="http://placehold.it/500/f4f4f4/fff&amp;text=4" class="img-responsive"></a></div>
+    </div>
+    <div class="item">
+      <div class="col-md-4"><a href="#"><img src="http://placehold.it/500/fcfcfc/333&amp;text=5" class="img-responsive"></a></div>
+    </div>
+    <div class="item">
+      <div class="col-md-4"><a href="#"><img src="http://placehold.it/500/f477f4/fff&amp;text=6" class="img-responsive"></a></div>
+    </div>
+  </div>
+  <a class="left carousel-control" href="#myCarousel" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i></a>
+  <a class="right carousel-control" href="#myCarousel" data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i></a>
+</div>
+</div>
+<div class="clearfix"></div>
+
+  <!-------------------------------------------------------------------------------------->
+
+<div style="padding-left:120px">
+  <div class="box box1 shadow1">
+    <h3>Upcoming Events:</h3>
+  </div>
+
+</div>
+
+  <!--------------------------------------------------------------------------------------->
+
+  <div style="padding:50px 120px 0px 20px">
+    <div class="bord">
+      <div class="head_car">Testimonials</div>
+
+      <class="content-slider_car">
+      <div class="slider_car">
+        <div class="mask_car">
+          <ul>
+            <li class="anim1">
+              <i class="fa fa-quote-left"></i>
+              <div class="quote"><br>Hello, this is a quote from a person.</div><br>
+              <div style="text-align:center;"><i class="fa fa-quote-right"></i></div>
+              <div class="source">- Person</div>
+            </li>
+            <li class="anim2">
+              <i class="fa fa-quote-left"></i>
+              <div class="quote"><br>Hello, this is a quote from another person.</div><br>
+              <div style="text-align:center"><i class="fa fa-quote-right"></i></div>
+              <div class="source">- Another person</div>
+            </li>
+            <li class="anim3">
+              <i class="fa fa-quote-left"></i><br>
+              <div class="quote"><br>Hello, this is a quote from an animal.</div><br>
+              <div style="text-align:center"><i class="fa fa-quote-right"></i></div>
+              <div class="source">- Animal</div>
+            </li>
+            <li class="anim4">
+              <i class="fa fa-quote-left"></i><br>
+              <div class="quote"><br>Hello, this is a quote from a plant.</div><br>
+              <div style="text-align:center"><i class="fa fa-quote-right"></i></div>
+              <div class="source">- Plant</div>
+            </li>
+            <li class="anim5">
+              <i class="fa fa-quote-left"></i><br>
+              <div class="quote"><br>How do ya like that.</div><br>
+              <div style="text-align:center"><i class="fa fa-quote-right"></i></div>
+              <div class="source">- Bhavya</div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+<div class="clearfix">&nbsp;
+</div>
+  <!------------------------------------------------------------------------------------------>
+
+  <footer class="footer-distributed">
+
+  <div class="footer-right">
+
+  <a href="#"><i class="fa fa-facebook"></i></a>
+  <a href="#"><i class="fa fa-instagram"></i></a>
+
+
+</div>
+
+<div class="footer-left">
+
+<p class="footer-links">
+<a href="#">Home</a>
+<i class="fa fa-ellipsis-h" style="font-size:20px"></i>
+<a href="#">About</a>
+<i class="fa fa-ellipsis-h" style="font-size:20px"></i>
+<a href="#">Contact</a>
+</p>
+
+<p class="company-name">Company Name &copy; 2018</p>
+</div>
+<div class="center-footer">
+
+<h4>Browse<span>Categories</span></h4>
+
+<ul style="list-style-type:none">
+<a href="#" class="links"><li>Clothing</li></a>
+<a href="#" class="links"><li>Jewellery</li></a>
+<a href="#" class="links"><li>Bags</li></a>
+</ul>
+</div>
+
+</footer>
+
+
+<script>
+
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot_my");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active_dot", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active_dot";
+  setTimeout(showSlides, 5000); // Change image every 2 seconds
+}
+// Instantiate the Bootstrap carousel
+$('#myCarousel').carousel({
+  interval: false
+})
+
+$('.carousel .item').each(function(){
+  var next = $(this).next();
+  if (!next.length) {
+    next = $(this).siblings(':first');
+  }
+  next.children(':first-child').clone().appendTo($(this));
+  
+  if (next.next().length>0) {
+    next.next().children(':first-child').clone().appendTo($(this));
+  }
+  else {
+  	$(this).siblings(':first').children(':first-child').clone().appendTo($(this));
+  }
+});
+</script>
+</body>
+</html>
